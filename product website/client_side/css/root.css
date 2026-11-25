@@ -1,0 +1,28 @@
+:root {
+  --bg-main: #f9fafb;         /* Main page background */
+  
+  --sidebar-bg: #ffffff;      /* Sidebar background */
+  --sidebar-text: #4b5563;    /* Default text color */
+  --sidebar-border: #e5e7eb;  /* Divider line color */
+  
+  --item-hover-bg: #f3f4f6;   /* Background when hovering over a link */
+  --item-hover-text: #111827; /* Text color when hovering */
+  
+  --item-active-bg: #eff6ff;  /* Background for the active page */
+  --item-active-text: #2563eb;/* Text color for the active page */
+  
+  --sidebar-width: 250px;
+
+  --header-bg: #06b6d4;      /* Cyan background */
+  --search-bg: #ffffff;      
+  --search-text: #374151;    
+  --subtab-text: #cffafe;    /* Light cyan for unselected tabs */
+  --subtab-active: #ffffff;  /* White for selected tab */
+
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --text-main: #111827;
+  --btn-bg: #06b6d4;      /* Matches your cyan header */
+  --btn-text: #ffffff;
+  --btn-hover: #0891b2;   /* Darker cyan for hover state */
+}

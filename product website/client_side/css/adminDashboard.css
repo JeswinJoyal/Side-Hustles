@@ -1,0 +1,121 @@
+/* Define all color variables here */
+:root {
+    --bg-main: #f4f7f6;
+    --text-main: #333;
+    --text-muted: #7f8c8d;
+    
+    --nav-bg: #2c3e50;
+    --nav-text: #ffffff;
+    
+    --card-bg: #ffffff;
+    --card-hover-add: #3498db;
+    --card-hover-edit: #f39c12;
+    
+    --btn-danger-bg: #e74c3c;
+    --btn-danger-hover: #c0392b;
+    --btn-text: #ffffff;
+}
+
+/* Reset basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logout-btn {
+    background-color: var(--btn-danger-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+    background-color: var(--btn-danger-hover);
+}
+
+/* Dashboard Hub (Main Area) */
+.dashboard-hub {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* The Option Cards */
+.option-card {
+    background-color: var(--card-bg);
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--card-hover-add);
+}
+
+/* Make the Edit card border different on hover just for visual flair */
+.edit-card:hover {
+    border-color: var(--card-hover-edit);
+}
+
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.option-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.option-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.4;
+}
